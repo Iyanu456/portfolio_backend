@@ -12,7 +12,7 @@ exports.send_mail = async (to, subject, text) => {
     });
 
     const mailOptions = {
-      from: Iyanu, // sender address
+      from: "Iyanu", // sender address
       to, // list of receivers
       subject, // Subject line
   
