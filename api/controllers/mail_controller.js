@@ -12,7 +12,7 @@ exports.send_mail = async (to, subject, text) => {
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER, // sender address
+      from: Iyanu, // sender address
       to, // list of receivers
       subject, // Subject line
   
