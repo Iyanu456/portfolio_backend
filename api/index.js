@@ -58,6 +58,14 @@ app.use(validateSecretKey);
 
 // Middleware
 
+// Ping route to keep the server awake
+app.get('/api/ping', (req, res) => {
+  res.json({
+    message: "Server is running",
+    status: "success",
+    ok: true
+  });
+});
 
 // Routes
 app.use('/api/send_mail', send_mail);
